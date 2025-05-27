@@ -1,0 +1,38 @@
+@use '../styles/mixins' as mixins;
+
+.nav {
+    max-width: 1200px;
+    margin: 4rem auto 0rem auto;
+    @include mixins.flex-center;
+    height: 4rem;
+    width: 100%;
+    gap: 1rem;
+    .Logo {
+        font-size: 4rem;
+        font-weight: bold;
+        flex-grow: 1;
+        line-height: 3rem;
+    }
+    div {
+        @include mixins.flex-center;
+        gap: 1rem;
+        hr {
+            height: 2rem;
+            border: none;
+            border-left: 2px solid black;
+        }
+        a {
+            color: #333;
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+            &:hover {
+                background-color: #f0f0f0;
+                color: #000;
+            }
+        }
+    }
+}
