@@ -1,0 +1,37 @@
+.masonryGrid {
+    display: flex;
+    margin-left: -16px;
+    width: auto;
+}
+
+.masonryColumn {
+    padding-left: 16px;
+    background-clip: padding-box;
+
+    > div {
+        margin-bottom: 16px;
+    }
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    p {
+        padding: 12px;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}

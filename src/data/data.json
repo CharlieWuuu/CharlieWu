@@ -1,5 +1,14 @@
 [
     {
+        "url": "/",
+        "figmaUrl": "",
+        "pic": "images/work/hiking_map.png",
+        "name": "健行軌跡",
+        "tag": ["ASP.NET", "C#", "MSSQL", "CSHTML", "Google Search Console", "XD"],
+        "description": "工研院漁電共生官網翻新。負責官網與後台系統的開發，以 ASP.NET MVC 5 為框架，前端使用 jQuery，資料庫使用 MSSQL。<br><br>因官網翻新需要原官網資料，當時使用 Python 爬下資料與附件。後台系統可編輯文章、上傳資料與調整帳號權限。當時開發時人力吃緊，故也協助微調設計稿稿。",
+        "date": "2023/12"
+    },
+    {
         "url": "https://www.sfea.org.tw/SfeaHomepage",
         "figmaUrl": "",
         "pic": "images/work/SfeaHomepage.png",
