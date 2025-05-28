@@ -1,6 +1,6 @@
 // src/app/layout.tsx
 import './globals.css';
-import Link from 'next/link';
+// import Link from 'next/link';
 import type { Metadata } from 'next';
 import styles from './layout.module.scss';
 import Nav from '../components/nav';
