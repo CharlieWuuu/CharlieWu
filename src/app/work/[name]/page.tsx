@@ -1,29 +1,30 @@
 import data from '@/data/data.json';
+import styles from './page.module.scss';
 
-interface Props {
+type PageProps = {
     params: {
         name: string;
     };
-}
+};
 
-export default function Work({ params }: Props) {
+export default function Work({ params }: PageProps) {
     const decodedName = decodeURIComponent(params.name);
     const thisData = data.find((d) => d.slug === decodedName);
-    console.log(data, thisData);
+
     return (
-        <>
-            <h1>{thisData?.name}</h1>
-            <p>{thisData?.date}</p>
-            <div>
+        <div className={styles.Work}>
+            <div className={styles.titleContainer}>
+                <h1>{thisData?.name}</h1>
+                <p>{thisData?.date}</p>
+            </div>
+            <div className={styles.tagContainer}>
                 {thisData?.tag.map((tag, index) => (
-                    <p key={index}>{tag}</p>
+                    <p key={index} className={styles.tag}>
+                        {tag}
+                    </p>
                 ))}
             </div>
-            <p>{thisData?.pic}</p>
-            <p>{thisData?.description}</p>
-            <p>{thisData?.article}</p>
-            <p>{thisData?.url}</p>
-            <p>{thisData?.figmaUrl}</p>
-        </>
+            <p className={styles.article}>{thisData?.article}</p>
+        </div>
     );
 }

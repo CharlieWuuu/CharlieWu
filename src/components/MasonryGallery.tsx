@@ -27,7 +27,9 @@ export default function MasonryGallery() {
                         <p>{item.description}</p>
                         <div className={styles.tagContainer}>
                             {item.tag.map((tag, index) => (
-                                <p key={index}>{tag}</p>
+                                <p key={index} className={styles.tag}>
+                                    {tag}
+                                </p>
                             ))}
                         </div>
                     </Link>

@@ -1,0 +1,36 @@
+.Work {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .titleContainer {
+        display: flex;
+        align-items: end;
+        gap: 1rem;
+        h1 {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+        }
+    }
+    .tagContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+
+        .tag {
+            background-color: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+    }
+    .article {
+        font-size: 1.4rem;
+        line-height: 3rem;
+    }
+}
