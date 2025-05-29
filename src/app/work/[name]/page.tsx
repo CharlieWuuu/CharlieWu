@@ -1,15 +1,9 @@
 import data from '@/data/data.json';
 import styles from './page.module.scss';
 
-export async function generateStaticParams() {
-    return data.map((item) => ({
-        name: item.slug,
-    }));
-}
-
-export default function Work({ params }: { params: { name: string } }) {
-    const decodedName = decodeURIComponent(params.name);
-    const thisData = data.find((d) => d.slug === decodedName);
+export default async function Work({ params }: { params: { name: string } }) {
+    const param = await params;
+    const thisData = data.find((d) => d.slug === param.name);
 
     return (
         <div className={styles.Work}>
