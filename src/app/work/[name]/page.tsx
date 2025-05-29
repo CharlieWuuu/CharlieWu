@@ -1,7 +1,9 @@
 import data from '@/data/data.json';
 import styles from './page.module.scss';
 
-export default async function Work({ params }: { params: { name: string } }) {
+type tParams = Promise<{ name: string }>;
+
+export default async function Work({ params }: { params: tParams }) {
     const param = await params;
     const thisData = data.find((d) => d.slug === param.name);
 
