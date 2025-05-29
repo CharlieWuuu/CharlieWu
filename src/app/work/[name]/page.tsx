@@ -1,6 +1,12 @@
 import data from '@/data/data.json';
 
-export default function Work({ params }: { params: { name: string } }) {
+interface Props {
+    params: {
+        name: string;
+    };
+}
+
+export default function Work({ params }: Props) {
     const decodedName = decodeURIComponent(params.name);
     const thisData = data.find((d) => d.slug === decodedName);
     console.log(data, thisData);
