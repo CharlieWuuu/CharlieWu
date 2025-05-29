@@ -1,37 +1,60 @@
 .masonryGrid {
     display: flex;
-    margin-left: -16px;
+    margin-left: -8rem;
     width: auto;
 }
 
 .masonryColumn {
-    padding-left: 16px;
+    padding-left: 8rem;
     background-clip: padding-box;
 
     > div {
-        margin-bottom: 16px;
+        margin-bottom: 10rem;
     }
 }
 
 .card {
-    background: white;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-
     &:hover {
-        transform: translateY(-4px);
+        img {
+            transform: scale(1.02);
+        }
     }
+    .imageContainer {
+        // border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        overflow: hidden;
+        img {
+            width: 100%;
+            display: block;
 
-    img {
-        width: 100%;
-        display: block;
+            transition: transform 0.6s ease;
+        }
     }
+    .titleContainer {
+        padding-top: 0.5rem;
+        display: flex;
+        align-items: end;
+        gap: 0.5rem;
+        .title {
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        .time {
+            font-size: 1.4rem;
+            color: #666;
+        }
+    }
+    .tagContainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
 
-    p {
-        padding: 12px;
-        font-weight: bold;
-        font-size: 1rem;
+        .tag {
+            background-color: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 1.2rem;
+            color: #333;
+        }
     }
 }

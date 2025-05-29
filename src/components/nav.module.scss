@@ -1,17 +1,23 @@
 @use '../styles/mixins' as mixins;
 
 .nav {
-    max-width: 1200px;
+    // box-shadow: inset 0 0 1px rgba(0, 0, 0);
+    // * {
+    //     box-shadow: inset 0 0 1px rgba(0, 0, 0);
+    // }
+    max-width: 1280px;
+    width: 90%;
     margin: 4rem auto 0rem auto;
-    @include mixins.flex-center;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
     height: 4rem;
-    width: 100%;
     gap: 1rem;
     .Logo {
-        font-size: 4rem;
-        font-weight: bold;
-        flex-grow: 1;
-        line-height: 3rem;
+        img {
+            padding: 0.5rem 0;
+            height: 4rem;
+        }
     }
     div {
         @include mixins.flex-center;
@@ -25,6 +31,7 @@
             color: #333;
             text-decoration: none;
             font-size: 2rem;
+            line-height: 2rem;
             font-weight: 500;
             padding: 0.5rem 1rem;
             transition: background-color 0.3s ease, color 0.3s ease;

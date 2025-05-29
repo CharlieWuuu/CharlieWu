@@ -10,7 +10,7 @@ export default function Nav() {
             </Link>
             <div>
                 <hr />
-                <Link href="/work">Work</Link>
+                {/* <Link href="/work">Work</Link> */}
                 <Link href="/about">About</Link>
             </div>
         </nav>

@@ -1,12 +1,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 10rem;
     .description {
         font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
         .title {
             font-size: 1.8rem;
         }
