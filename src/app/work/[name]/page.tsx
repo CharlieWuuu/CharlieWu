@@ -1,13 +1,7 @@
 import data from '@/data/data.json';
 import styles from './page.module.scss';
 
-type PageProps = {
-    params: {
-        name: string;
-    };
-};
-
-export default function Work({ params }: PageProps) {
+export default function Work({ params }: { params: { name: string } }) {
     const decodedName = decodeURIComponent(params.name);
     const thisData = data.find((d) => d.slug === decodedName);
 
