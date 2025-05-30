@@ -3,7 +3,8 @@
 import Masonry from 'react-masonry-css';
 import styles from './MasonryGallery.module.scss';
 import data from '@/data/data.json';
-import Link from 'next/link';
+// import Link from 'next/link';
+import AnimatedLink from '@/components/AnimatedLink';
 
 export default function MasonryGallery() {
     const breakpointColumnsObj = {
@@ -16,23 +17,25 @@ export default function MasonryGallery() {
             {/* 他是執行在 use client 的條件下對吧，代表是在瀏覽器端才執行？那為什麼 SSR 會有？為什麼？ */}
             {data.map((item, index) => (
                 <div key={index} className={styles.card}>
-                    <Link href={`/work/${item.slug}`} className={styles.button}>
+                    <AnimatedLink href={`/work/${item.slug}`} className={styles.button}>
                         <div className={styles.imageContainer}>
                             <img src={item.pic} alt={item.name} />
                         </div>
-                        <div className={styles.titleContainer}>
-                            <p className={styles.title}>{item.name}</p>
-                            <span className={styles.time}>{item.date}</span>
+                        <div className={styles.text}>
+                            <div className={styles.titleContainer}>
+                                <p className={styles.title}>{item.name}</p>
+                                <span className={styles.time}>{item.date}</span>
+                            </div>
+                            <p>{item.description}</p>
+                            <div className={styles.tagContainer}>
+                                {item.tag.map((tag, index) => (
+                                    <p key={index} className={styles.tag}>
+                                        {tag}
+                                    </p>
+                                ))}
+                            </div>
                         </div>
-                        <p>{item.description}</p>
-                        <div className={styles.tagContainer}>
-                            {item.tag.map((tag, index) => (
-                                <p key={index} className={styles.tag}>
-                                    {tag}
-                                </p>
-                            ))}
-                        </div>
-                    </Link>
+                    </AnimatedLink>
                 </div>
             ))}
         </Masonry>

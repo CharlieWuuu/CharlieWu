@@ -1,5 +1,16 @@
 [
     {
+        "slug": "charliewu",
+        "url": "/",
+        "figmaUrl": "",
+        "pic": "/images/work/charliewu.png",
+        "name": "個人網站",
+        "tag": ["React", "Next.js", "Masonry", "Figma"],
+        "article": "",
+        "date": "2025/06",
+        "description": ""
+    },
+    {
         "slug": "hiking_map",
         "url": "/",
         "figmaUrl": "",

@@ -3,15 +3,14 @@
     flex-direction: column;
     gap: 10rem;
     .description {
-        font-size: 1.5rem;
         display: flex;
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.4rem;
         .title {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
         .slogan {
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
     .work_wrapper {

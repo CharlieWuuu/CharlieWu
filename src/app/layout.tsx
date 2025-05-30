@@ -1,9 +1,10 @@
 // src/app/layout.tsx
 import './globals.css';
-// import Link from 'next/link';
 import type { Metadata } from 'next';
 import styles from './layout.module.scss';
 import Nav from '../components/nav';
+// import AnimatedMain from '@/components/AnimatedMain';
+import TransitionLayout from '@/components/TransitionLayout';
 
 export const metadata: Metadata = {
     title: 'Charlie Wu',
@@ -15,7 +16,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html className={styles.html} lang="zh">
             <body className={styles.body}>
                 <Nav />
-                <main>{children}</main>
+                <main>
+                    <TransitionLayout>{children}</TransitionLayout>
+                </main>
                 <footer>
                     <p>&copy; {new Date().getFullYear()} Charlie Wu</p>
                 </footer>

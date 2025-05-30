@@ -6,14 +6,14 @@
         flex-direction: column;
         main,
         footer {
-            max-width: 1280px;
+            max-width: 1200px;
             width: 90%;
             margin: auto;
         }
         main {
             flex-grow: 1;
-            animation: fadeIn 1s ease both;
         }
+
         footer {
             border-top: 1px solid black;
             padding: 4rem;

@@ -5,7 +5,7 @@
     // * {
     //     box-shadow: inset 0 0 1px rgba(0, 0, 0);
     // }
-    max-width: 1280px;
+    max-width: 1200px;
     width: 90%;
     margin: 4rem auto 0rem auto;
     display: flex;
@@ -14,6 +14,7 @@
     height: 4rem;
     gap: 1rem;
     .Logo {
+        transform: translateX(-2px);
         img {
             padding: 0.5rem 0;
             height: 4rem;
@@ -23,15 +24,15 @@
         @include mixins.flex-center;
         gap: 1rem;
         hr {
-            height: 2rem;
+            height: 1.5rem;
             border: none;
-            border-left: 2px solid black;
+            border-left: 1px solid black;
         }
         a {
             color: #333;
             text-decoration: none;
-            font-size: 2rem;
-            line-height: 2rem;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
             font-weight: 500;
             padding: 0.5rem 1rem;
             transition: background-color 0.3s ease, color 0.3s ease;
