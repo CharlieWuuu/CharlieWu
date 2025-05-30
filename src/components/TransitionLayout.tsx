@@ -17,12 +17,13 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
     }, [children, phase]);
 
     useEffect(() => {
-        const handler = (e: any) => {
-            setExitHref(e.detail);
+        const handler = (e: Event) => {
+            const customEvent = e as CustomEvent<string>;
+            setExitHref(customEvent.detail);
             setPhase('exiting');
         };
-        document.addEventListener('startExitAnimation', handler);
-        return () => document.removeEventListener('startExitAnimation', handler);
+        document.addEventListener('startExitAnimation', handler as EventListener);
+        return () => document.removeEventListener('startExitAnimation', handler as EventListener);
     }, []);
 
     useEffect(() => {

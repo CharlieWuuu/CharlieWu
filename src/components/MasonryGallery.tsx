@@ -5,6 +5,7 @@ import styles from './MasonryGallery.module.scss';
 import data from '@/data/data.json';
 // import Link from 'next/link';
 import AnimatedLink from '@/components/AnimatedLink';
+import Image from 'next/image';
 
 export default function MasonryGallery() {
     const breakpointColumnsObj = {
@@ -19,7 +20,7 @@ export default function MasonryGallery() {
                 <div key={index} className={styles.card}>
                     <AnimatedLink href={`/work/${item.slug}`} className={styles.button}>
                         <div className={styles.imageContainer}>
-                            <img src={item.pic} alt={item.name} />
+                            <Image src={item.pic} alt={item.name} />
                         </div>
                         <div className={styles.text}>
                             <div className={styles.titleContainer}>
