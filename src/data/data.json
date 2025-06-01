@@ -227,8 +227,8 @@
         "figmaUrl": "",
         "pic": "/images/work/business_card.png",
         "name": "幾何圖案名片",
-        "tag": ["HTML", "CSS", "「動畫互動網頁程式」課程作品"],
-        "article": "CSS的練習作品，練習幾何圖形繪製與排版。<br><br>設計參考<a href='https://www.pinterest.com/pin/188517934392232217/'>自此</a>。",
+        "tag": ["HTML", "CSS"],
+        "article": "<p>這是我的第一個網頁作品，練習應用 HTML 與 CSS 做網頁排版。此為 Hahow 課程「<a href='https://hahow.in/courses/56189df9df7b3d0b005c6639' target='_blank'>動畫互動網頁程式入門</a>」的作業之一。</p><p>我在本作品應用了 CSS 的幾何形狀（矩形、圓角、填色、透明度）、絕對定位／相對定位、flexbox 的排版概念。</p><br/><img src='/images/work/business_card.png' alt='幾何圖案名片' width='20%'/><br/><p>當時是初次接觸網頁開發，處於觀念尚在建立的時期，所以一些不夠完善的地方。</p><p>尤其是尚未學到手機版的排版，所以無法在手機上順利展示（會過小）。</p><p>然而經過此練習，我很快發現 CSS 與繪圖軟體 Illustrator 有許多相似概念，例如：內外邊框、圓角、陰影等，讓我加快熟悉這些概念。</p></br><p>本作品的設計參考<a href='https://www.pinterest.com/pin/188517934392232217/' target='_blank'>自此</a>。</p><img src='https://i.pinimg.com/736x/e1/68/f0/e168f0ab2c28032505630f5835d2a234.jpg' alt='幾何圖案名片設計參考' width='20%'/><br/>",
         "date": "2021/11",
         "description": "管理與展示健行軌跡的網站。"
     }

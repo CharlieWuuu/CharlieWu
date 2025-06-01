@@ -12,15 +12,16 @@ export default async function Work({ params }: { params: tParams }) {
             <div className={styles.titleContainer}>
                 <h1>{thisData?.name}</h1>
                 <p>{thisData?.date}</p>
+                <div className={styles.tagContainer}>
+                    {thisData?.tag.map((tag, index) => (
+                        <p key={index} className={styles.tag}>
+                            {tag}
+                        </p>
+                    ))}
+                </div>
             </div>
-            <div className={styles.tagContainer}>
-                {thisData?.tag.map((tag, index) => (
-                    <p key={index} className={styles.tag}>
-                        {tag}
-                    </p>
-                ))}
-            </div>
-            <p className={styles.article}>{thisData?.article}</p>
+
+            <div className={styles.article} dangerouslySetInnerHTML={{ __html: thisData?.article ?? '' }} />
         </div>
     );
 }

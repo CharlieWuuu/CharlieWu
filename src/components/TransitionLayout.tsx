@@ -33,7 +33,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
             router.push(exitHref);
             setTimeout(() => {
                 setPhase('entering');
-            }, 500); // wait duration
+            }, 100); // wait duration
         }
     }, [phase, exitHref, router]);
 
@@ -47,7 +47,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 0 }}
                         exit={{ opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+                        // transition={{ duration: 3 }}
                         style={{
                             opacity: 0,
                             position: 'absolute',
@@ -69,7 +69,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
                         }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
-                        transition={{ duration: 1 }}>
+                        transition={{ duration: 1.2 }}>
                         {displayChildren}
                     </motion.div>
                 )}

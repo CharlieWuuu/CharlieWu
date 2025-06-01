@@ -20,7 +20,7 @@ export default function MasonryGallery() {
                 <div key={index} className={styles.card}>
                     <AnimatedLink href={`/work/${item.slug}`} className={styles.button}>
                         <div className={styles.imageContainer}>
-                            <Image src={item.pic} alt={item.name} />
+                            <Image src={item.pic} alt={item.name} width={1000} height={1000} />
                         </div>
                         <div className={styles.text}>
                             <div className={styles.titleContainer}>
