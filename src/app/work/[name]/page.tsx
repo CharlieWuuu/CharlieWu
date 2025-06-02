@@ -1,11 +1,21 @@
+'use client';
+
+import { useEffect, useRef } from 'react';
+import { useParams } from 'next/navigation';
 import data from '@/data/data.json';
 import styles from './page.module.scss';
 
-type tParams = Promise<{ name: string }>;
+export default function Work() {
+    const hasDispatchedRef = useRef(false); // 只 dispatch 一次
+    const params = useParams();
+    const thisData = data.find((d) => d.slug === params.name);
 
-export default async function Work({ params }: { params: tParams }) {
-    const param = await params;
-    const thisData = data.find((d) => d.slug === param.name);
+    useEffect(() => {
+        if (!hasDispatchedRef.current) {
+            document.dispatchEvent(new CustomEvent('startEnterAnimation'));
+            hasDispatchedRef.current = true; // 鎖上
+        }
+    }, []);
 
     return (
         <div className={styles.Work}>
@@ -20,7 +30,6 @@ export default async function Work({ params }: { params: tParams }) {
                     ))}
                 </div>
             </div>
-
             <div className={styles.article} dangerouslySetInnerHTML={{ __html: thisData?.article ?? '' }} />
         </div>
     );

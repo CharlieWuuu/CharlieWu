@@ -1,7 +1,18 @@
+'use client';
+import { useEffect, useRef } from 'react';
 import styles from './page.module.scss';
 import MasonryGallery from '@/components/MasonryGallery';
 
 export default function Index() {
+    const hasDispatchedRef = useRef(false); // 加入鎖
+
+    useEffect(() => {
+        if (!hasDispatchedRef.current) {
+            document.dispatchEvent(new CustomEvent('startEnterAnimation'));
+            hasDispatchedRef.current = true; // 鎖上，保證只執行一次
+        }
+    }, []);
+
     return (
         <div className={styles.container}>
             <div className={styles.description}>
