@@ -18,7 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet" />
             </head>
             <body className={styles.body}>
-                <div id={styles.overlay}></div>
                 <Nav />
                 <TransitionLayout>
                     <main>{children}</main>
