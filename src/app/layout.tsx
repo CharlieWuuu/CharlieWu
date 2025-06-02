@@ -1,9 +1,7 @@
-// src/app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import styles from './layout.module.scss';
 import Nav from '../components/nav';
-// import AnimatedMain from '@/components/AnimatedMain';
 import TransitionLayout from '@/components/TransitionLayout';
 
 export const metadata: Metadata = {

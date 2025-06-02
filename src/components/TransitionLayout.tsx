@@ -8,7 +8,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
     // children，即頁面內容
 
     const router = useRouter(); // 取得 Next.js 的 router
-    const [displayChildren, setDisplayChildren] = useState(children); // 一開始把 children 放進 displayChildren 狀態，之後用來做動畫進場時的畫面顯示
+    // const [displayChildren, setDisplayChildren] = useState(children); // 一開始把 children 放進 displayChildren 狀態，之後用來做動畫進場時的畫面顯示
     const [exitHref, setExitHref] = useState<string | null>(null); // exitHref：當離場時，存下一個要跳轉的 href
     const [phase, setPhase] = useState<'idle' | 'exiting' | 'waiting' | 'entering'>('idle'); // phase：表示動畫階段（四種狀態）
 
@@ -33,7 +33,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
             // 稍微等一下（給新頁面機會 mount）再觸發進場動畫
             setTimeout(() => {
                 setPhase('entering');
-            }, 300); // wait duration
+            }, 500); // wait duration
         }
     }, [phase, exitHref, router]);
 
@@ -46,7 +46,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
             <AnimatePresence mode="wait">
                 {(phase === 'idle' || phase === 'exiting' || phase === 'entering') && (
                     <motion.div key={phase} initial={{ opacity: phase === 'entering' ? 0 : 1, y: phase === 'entering' ? 8 : 0 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 8 }} transition={{ duration: 0.8 }}>
-                        {displayChildren}
+                        {children}
                     </motion.div>
                 )}
             </AnimatePresence>

@@ -189,17 +189,6 @@
         "description": "管理與展示健行軌跡的網站。"
     },
     {
-        "slug": "buylist",
-        "url": "https://charliewuuu.github.io/buylist/",
-        "figmaUrl": "",
-        "pic": "/images/work/buylist.png",
-        "name": "購物清單",
-        "tag": ["SCSS", "「動畫互動網頁程式」課程作品"],
-        "article": "JavaScript的練習作品。<br><br>功能說明：<br>1.數量按鈕：參考電商網站的結帳項目設計，設計數量按鈕。點擊後數量、小計、總價會連動改變。<br>2.防呆功能：避免輸入無法計算的值，單價input輸入非數字、漏填會出現警示文字。",
-        "date": "2022/06",
-        "description": "管理與展示健行軌跡的網站。"
-    },
-    {
         "slug": "cinema",
         "url": "https://charliewuuu.github.io/FantasyFilmFestival/1.%20%E9%A6%96%E9%A0%81/index.html",
         "figmaUrl": "https://www.figma.com/file/g9jON6L8dpkjFTKrOhawUo/%E5%B0%88%E9%A1%8C-mockup?node-id=0%3A1",
@@ -215,11 +204,11 @@
         "url": "",
         "figmaUrl": "https://www.figma.com/proto/rXvrctMmomB1Vxh2xdEY2D/Travel-App?node-id=3%3A5&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A5",
         "pic": "/images/work/figma_1.png",
-        "name": "旅遊APP｜Figma",
-        "tag": ["Figma", "「網頁設計與開發實務班」課程作品"],
-        "article": "為「網頁設計與開發實務班」課程的Figma作品。<br><br>以旅遊APP為例，練習app的版面設計、版面規格、頁面跳轉功能與規劃UI flow。",
+        "name": "旅遊 APP",
+        "tag": ["Figma"],
+        "article": "<section><p>這是一個 Figma 作品</p><section>為「網頁設計與開發實務班」課程的Figma作品。<br><br>以旅遊APP為例，練習app的版面設計、版面規格、頁面跳轉功能與規劃UI flow。",
         "date": "2022/05",
-        "description": "管理與展示健行軌跡的網站。"
+        "description": "練習設計旅遊 APP 的版面與功能，我的第一個 Figma 練習作品。"
     },
     {
         "slug": "business_card",
@@ -228,8 +217,8 @@
         "pic": "/images/work/business_card.png",
         "name": "幾何圖案名片",
         "tag": ["HTML", "CSS"],
-        "article": "<p>這是我的第一個網頁作品，練習應用 HTML 與 CSS 做網頁排版。此為 Hahow 課程「<a href='https://hahow.in/courses/56189df9df7b3d0b005c6639' target='_blank'>動畫互動網頁程式入門</a>」的作業之一。</p><p>我在本作品應用了 CSS 的幾何形狀（矩形、圓角、填色、透明度）、絕對定位／相對定位、flexbox 的排版概念。</p><br/><img src='/images/work/business_card.png' alt='幾何圖案名片' width='20%'/><br/><p>當時是初次接觸網頁開發，處於觀念尚在建立的時期，所以一些不夠完善的地方。</p><p>尤其是尚未學到手機版的排版，所以無法在手機上順利展示（會過小）。</p><p>然而經過此練習，我很快發現 CSS 與繪圖軟體 Illustrator 有許多相似概念，例如：內外邊框、圓角、陰影等，讓我加快熟悉這些概念。</p></br><p>本作品的設計參考<a href='https://www.pinterest.com/pin/188517934392232217/' target='_blank'>自此</a>。</p><img src='https://i.pinimg.com/736x/e1/68/f0/e168f0ab2c28032505630f5835d2a234.jpg' alt='幾何圖案名片設計參考' width='20%'/><br/>",
+        "article": "<section><p>這是我的第一個網頁作品，練習應用 HTML 與 CSS 做網頁排版，網址<a href='https://charliewuuu.github.io/business_card/' target='_blank'>在此</a>。</section><section><p>此為 Hahow 課程「<a href='https://hahow.in/courses/56189df9df7b3d0b005c6639' target='_blank'>動畫互動網頁程式入門</a>」的作業之一，我在本作品應用了 CSS 的幾何形狀（矩形、圓角、填色、透明度）、絕對定位／相對定位、flexbox 的排版概念。</p><section/><figure><img src='/images/work/business_card.png' alt='幾何圖案名片' width='20%'/><figcaption>畫面示意圖</figcaption></figure><section><p>當時是初次接觸網頁開發，處於觀念尚在建立的時期，所以一些不夠完善的地方。尤其是尚未學到手機版的排版，所以無法在手機上順利展示（會過小）。</p><p>然而經過此練習，我注意到 CSS 的邏輯與繪圖軟體 Illustrator 有許多相似概念，例如：內外邊框、圓角、陰影等，這些發現對我後續的學習有許多幫助。</p></section><section><p>本作品的設計參考<a href='https://www.pinterest.com/pin/188517934392232217/' target='_blank'>自 Pinterest 上的素材</a>。</p></section><figure><img src='https://i.pinimg.com/736x/e1/68/f0/e168f0ab2c28032505630f5835d2a234.jpg' alt='幾何圖案名片設計參考' width='20%'/><figcaption>幾何圖案名片的設計參考</figcaption></figure>",
         "date": "2021/11",
-        "description": "管理與展示健行軌跡的網站。"
+        "description": "HTML 與 CSS 的網頁排版，我的第一個網頁練習作品。"
     }
 ]

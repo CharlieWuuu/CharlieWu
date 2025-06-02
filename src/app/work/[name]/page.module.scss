@@ -31,7 +31,22 @@
         }
     }
     .article {
-        font-size: 1.2rem;
-        line-height: 3rem;
+        font-size: 1.1rem;
+        line-height: 2.2rem;
+        margin-bottom: 2rem;
+
+        section {
+            margin-bottom: 2rem;
+        }
+        img {
+            margin: auto;
+        }
+        figcaption {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            font-size: 1rem;
+            color: #888;
+        }
     }
 }

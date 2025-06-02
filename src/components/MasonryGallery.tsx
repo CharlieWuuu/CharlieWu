@@ -3,7 +3,6 @@
 import Masonry from 'react-masonry-css';
 import styles from './MasonryGallery.module.scss';
 import data from '@/data/data.json';
-// import Link from 'next/link';
 import AnimatedLink from '@/components/AnimatedLink';
 import Image from 'next/image';
 
