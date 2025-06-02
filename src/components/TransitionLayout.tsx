@@ -21,7 +21,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
     useEffect(() => {
         const enterHandler = () => {
             setPhase('entering');
-            setTimeout(() => setPhase('idle'), 1000);
+            setTimeout(() => setPhase('idle'), 200);
         };
 
         document.addEventListener('startEnterAnimation', enterHandler);
