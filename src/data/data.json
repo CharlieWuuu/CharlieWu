@@ -193,11 +193,11 @@
         "url": "https://charliewuuu.github.io/FantasyFilmFestival/1.%20%E9%A6%96%E9%A0%81/index.html",
         "figmaUrl": "https://www.figma.com/file/g9jON6L8dpkjFTKrOhawUo/%E5%B0%88%E9%A1%8C-mockup?node-id=0%3A1",
         "pic": "/images/work/cinema.jpg",
-        "name": "金馬奇幻影展｜專題作品",
-        "tag": ["UX", "「網頁設計與開發實務班」專題作品"],
-        "article": "為「網頁設計與開發實務班」專題作品，藉此專題，我們走完完整的網站規劃流程：市場調查、SWAT分析、Wireframe、UI flow、MockUP到程式撰寫與發表。此網頁由我與組員二人完成，我主要負責網頁程式與書面資料的撰寫。<br><br>本網頁改良「台北金馬影展」的網頁，其原網站有一系列影展活動資訊，我們獨立取出其中的一項影展「金馬奇幻影展」為其製作活動網站。調整設計、製作視覺化的節目表、加入影展功能。 書面資料<a href='assets/date/金馬奇幻影展」網站設計__期末書面報告.pdf' target='_blank'>見此（另開視窗，為PDF檔）</a>。<br><br>Figma為組員繪製，一併附上作為參考。",
+        "name": "金馬奇幻影展",
+        "tag": ["HTML", "CSS", "JavaScript", "jQuery", "UX"],
+        "article": "<section><p>此作品改良自「金馬奇幻影展」2022 年的活動網站，為「網頁設計與開發實務班」期末專題作品，網址<a href='https://charliewuuu.github.io/FantasyFilmFestival/1.%20%E9%A6%96%E9%A0%81/index.html' target='_blank'>在此</a>。</p><p>此專題讓我完整經歷的網站規劃流程：市場調查、SWAT 分析、Wireframe、UI flow、MockUP 到程式撰寫與發表。此網頁由我與組員 2 人完成，我主要負責網頁程式與書面資料撰寫。</p><p>其原網站其實隸屬於「台北金馬影展」的一個子網站，考量到原本網頁的內容過於繁雜，加上資訊查詢不便，我們獨立取出其中的一項影展「金馬奇幻影展」為其製作活動網站，並調整設計、製作視覺化的節目表、加入影展功能。</p></section><figure><img src='/images/work/cinema.jpg' alt='幾何圖案名片' width='20%'/><figcaption>畫面示意圖</figcaption></figure><section><p>書面資料<a href='assets/date/金馬奇幻影展」網站設計__期末書面報告.pdf' target='_blank'>見此（另開視窗，為PDF檔）</a>。</p></section>",
         "date": "2022/06",
-        "description": "管理與展示健行軌跡的網站。"
+        "description": "改良自「金馬奇幻影展」2022 年的活動網站，為「網頁設計與開發實務班」期末專題作品。"
     },
     {
         "slug": "figma_travel",
@@ -206,7 +206,7 @@
         "pic": "/images/work/figma_1.png",
         "name": "旅遊 APP",
         "tag": ["Figma"],
-        "article": "<section><p>這是一個 Figma 作品</p><section>為「網頁設計與開發實務班」課程的Figma作品。<br><br>以旅遊APP為例，練習app的版面設計、版面規格、頁面跳轉功能與規劃UI flow。",
+        "article": "<section><p>這是我的第一個 Figma 作品，為「網頁設計與開發實務班」課程的課堂作業，網址<a href='https://www.figma.com/proto/rXvrctMmomB1Vxh2xdEY2D/Travel-App?node-id=3%3A5&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A5' target='_blank'>在此</a>。</p><section><section><p>此作品以旅遊 App 為例，練習 App 產品常見的版面設計、規格，並應用 Figma 的 Auto Layout、Components、頁面交互的功能，做出可復用且自動依序排版的元件，並模擬網頁的頁面交互（UI flow）。</p></section><figure><img src='/images/work/figma_1.png' alt='幾何圖案名片' width='20%'/><figcaption>畫面示意圖</figcaption></figure>",
         "date": "2022/05",
         "description": "練習設計旅遊 APP 的版面與功能，我的第一個 Figma 練習作品。"
     },
