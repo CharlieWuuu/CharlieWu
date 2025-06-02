@@ -21,12 +21,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </head>
             <body className={styles.body}>
                 <Nav />
-                <main>
-                    <TransitionLayout>{children}</TransitionLayout>
-                </main>
-                <footer>
-                    <p>&copy; {new Date().getFullYear()} Charlie Wu</p>
-                </footer>
+                <TransitionLayout>
+                    <main>{children}</main>
+                    <footer>
+                        <p>&copy; {new Date().getFullYear()} Charlie Wu</p>
+                    </footer>
+                </TransitionLayout>
             </body>
         </html>
     );
