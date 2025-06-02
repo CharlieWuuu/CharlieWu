@@ -1,10 +1,19 @@
 @use '../styles/mixins' as mixins;
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
 .html {
     overflow-y: scroll;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
     .body {
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+
         > div {
             flex-grow: 1;
             display: flex;

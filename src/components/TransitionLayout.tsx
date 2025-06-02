@@ -11,7 +11,7 @@ export default function TransitionLayout({ children }: { children: React.ReactNo
     useEffect(() => {
         const exitHandler = (e: CustomEvent<string>) => {
             setPhase('exiting');
-            setTimeout(() => router.push(e.detail), 1000);
+            setTimeout(() => router.push(e.detail), 800);
         };
 
         document.addEventListener('startExitAnimation', exitHandler as EventListener);

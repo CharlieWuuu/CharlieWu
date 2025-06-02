@@ -1,5 +1,5 @@
 .TransitionLayout {
-    transition: all 1s ease-in;
+    transition: all 0.8s ease;
     &.idle {
         opacity: 1;
         transform: translateY(0px);
@@ -10,7 +10,7 @@
         opacity: 0;
         transform: translateY(8px);
         // filter: blur(2px);
-        transition: all 0.2s ease-out;
+        transition: all 0.2s ease;
     }
 
     &.exiting {
