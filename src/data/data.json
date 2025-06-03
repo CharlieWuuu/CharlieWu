@@ -5,10 +5,10 @@
         "figmaUrl": "",
         "pic": "/images/work/charliewu.png",
         "name": "個人網站",
-        "tag": ["React", "Next.js", "Masonry", "Figma"],
+        "tag": ["React", "Next.js", "Masonry"],
         "article": "",
         "date": "2025/06",
-        "description": ""
+        "description": "使用 Next.js 與 React 開發的個人網站，即本網站，包含作品集、關於我等功能。"
     },
     {
         "slug": "hiking_map",
@@ -26,8 +26,8 @@
         "url": "https://www.sfea.org.tw/SfeaHomepage",
         "figmaUrl": "",
         "pic": "/images/work/SfeaHomepage.png",
-        "name": "漁電共生官網",
-        "tag": ["ASP.NET", "C#", "MSSQL", "Google Search Console", "XD"],
+        "name": "漁電共生環社檢核",
+        "tag": ["ASP.NET", "C#", "MSSQL", "Google Search Console", "Adobe XD"],
         "article": "工研院漁電共生官網翻新。負責官網與後台系統的開發，以 ASP.NET MVC 5 為框架，前端使用 jQuery，資料庫使用 MSSQL。<br><br>因官網翻新需要原官網資料，當時使用 Python 爬下資料與附件。後台系統可編輯文章、上傳資料與調整帳號權限。當時開發時人力吃緊，故也協助微調設計稿稿。",
         "date": "2023/12",
         "description": "管理與展示健行軌跡的網站。"
@@ -184,7 +184,7 @@
         "pic": "/images/work/brand_color.png",
         "name": "品牌用色觀察",
         "tag": ["SCSS", "「動畫互動網頁程式」課程作品"],
-        "article": "此為配色作業，以KKday為例。<br><br>整體上以KKday的logo顏色為主，輔以網站上出現過的其他輔助色（黃色、紅色）。觀察後注意到整體用色活潑且在不同平台的產品上風格一致，我認為值得做為參考，故以此公司為題。<br><br>設計主要發想<a href='https://www.pinterest.com/pin/188517934393199355/'>自此</a>。網站有做RWD，最下面按鈕有互動效果。",
+        "article": "<section><p>此為 Hahow 課程「<a href='https://hahow.in/courses/56189df9df7b3d0b005c6639' target='_blank'>動畫互動網頁程式入門</a>」的配色練習作業，我在本作品應用了 CSS 的動畫功能與 RWD 排版。網址<a href='https://charliewuuu.github.io/brand_color/' target='_blank'>在此</a>。</p></section><section><p>此作業需要觀察品牌用色，整理出色票並嘗試不同文字樣式排版。</p><p>因為喜歡旅遊，加上想找用色繽紛的品牌，因此本次作業選擇以 KKday 為例。</p></section><figure><img src='/images/work/brand_color.png' alt='幾何圖案名片' width='20%'/><figcaption>畫面示意圖</figcaption></figure><section><p>觀察後發現 KKday 的 logo 使用的青色可廣泛見於大部分文宣，例如用在底色或作為邊框，成為主要的企業形象。</p><p>而輔色也固定以黃色、紅色為主，黃色有時也作為背景使用，紅色比較多用來標示重點。</p><p>個人覺得整體用色活潑且在不同平台的產品上風格一致，故以此品牌為題。</p></section><section><p>設計主要發想<a href='https://www.pinterest.com/pin/188517934393199355/'>自此</a>。</p></section>",
         "date": "2022/07",
         "description": "管理與展示健行軌跡的網站。"
     },
@@ -208,7 +208,7 @@
         "tag": ["Figma"],
         "article": "<section><p>這是我的第一個 Figma 作品，為「網頁設計與開發實務班」課程的課堂作業，網址<a href='https://www.figma.com/proto/rXvrctMmomB1Vxh2xdEY2D/Travel-App?node-id=3%3A5&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A5' target='_blank'>在此</a>。</p><section><section><p>此作品以旅遊 App 為例，練習 App 產品常見的版面設計、規格，並應用 Figma 的 Auto Layout、Components、頁面交互的功能，做出可復用且自動依序排版的元件，並模擬網頁的頁面交互（UI flow）。</p></section><figure><img src='/images/work/figma_1.png' alt='幾何圖案名片' width='20%'/><figcaption>畫面示意圖</figcaption></figure>",
         "date": "2022/05",
-        "description": "練習設計旅遊 APP 的版面與功能，我的第一個 Figma 練習作品。"
+        "description": "練習設計旅遊 APP 的版面與功能，第一個 Figma 練習作品。"
     },
     {
         "slug": "business_card",
@@ -219,6 +219,6 @@
         "tag": ["HTML", "CSS"],
         "article": "<section><p>這是我的第一個網頁作品，練習應用 HTML 與 CSS 做網頁排版，網址<a href='https://charliewuuu.github.io/business_card/' target='_blank'>在此</a>。</section><section><p>此為 Hahow 課程「<a href='https://hahow.in/courses/56189df9df7b3d0b005c6639' target='_blank'>動畫互動網頁程式入門</a>」的作業之一，我在本作品應用了 CSS 的幾何形狀（矩形、圓角、填色、透明度）、絕對定位／相對定位、flexbox 的排版概念。</p><section/><figure><img src='/images/work/business_card.png' alt='幾何圖案名片' width='20%'/><figcaption>畫面示意圖</figcaption></figure><section><p>當時是初次接觸網頁開發，處於觀念尚在建立的時期，所以一些不夠完善的地方。尤其是尚未學到手機版的排版，所以無法在手機上順利展示（會過小）。</p><p>然而經過此練習，我注意到 CSS 的邏輯與繪圖軟體 Illustrator 有許多相似概念，例如：內外邊框、圓角、陰影等，這些發現對我後續的學習有許多幫助。</p></section><section><p>本作品的設計參考<a href='https://www.pinterest.com/pin/188517934392232217/' target='_blank'>自 Pinterest 上的素材</a>。</p></section><figure><img src='https://i.pinimg.com/736x/e1/68/f0/e168f0ab2c28032505630f5835d2a234.jpg' alt='幾何圖案名片設計參考' width='20%'/><figcaption>幾何圖案名片的設計參考</figcaption></figure>",
         "date": "2021/11",
-        "description": "HTML 與 CSS 的網頁排版，我的第一個網頁練習作品。"
+        "description": "HTML 與 CSS 的網頁排版，第一個網頁練習作品。"
     }
 ]

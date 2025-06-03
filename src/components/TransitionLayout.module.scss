@@ -3,19 +3,16 @@
     &.idle {
         opacity: 1;
         transform: translateY(0px);
-        // filter: blur(0px);
     }
 
     &.entering {
         opacity: 0;
         transform: translateY(8px);
-        // filter: blur(2px);
         transition: all 0.2s ease;
     }
 
     &.exiting {
         opacity: 0;
         transform: translateY(8px);
-        // filter: blur(2px);
     }
 }
