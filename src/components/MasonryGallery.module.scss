@@ -2,11 +2,18 @@
     display: flex;
     margin-left: -8rem;
     width: auto;
+    @media screen and (max-width: 800px) {
+        margin-left: -4rem;
+    }
 }
 
 .masonryColumn {
     padding-left: 8rem;
     background-clip: padding-box;
+
+    @media screen and (max-width: 800px) {
+        padding-left: 4rem;
+    }
 
     > div {
         margin-bottom: 10rem;

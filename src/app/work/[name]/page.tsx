@@ -30,6 +30,20 @@ export default function Work() {
                     ))}
                 </div>
             </div>
+            <div>
+                作品連結：
+                <a href={thisData?.url} target="_blank" rel="noopener noreferrer">
+                    網站
+                </a>
+                {thisData?.figmaUrl && (
+                    <>
+                        、
+                        <a href={thisData?.figmaUrl} target="_blank" rel="noopener noreferrer">
+                            Figma
+                        </a>
+                    </>
+                )}
+            </div>
             <div className={styles.article} dangerouslySetInnerHTML={{ __html: thisData?.article ?? '' }} />
         </div>
     );
