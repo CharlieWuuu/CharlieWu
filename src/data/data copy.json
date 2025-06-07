@@ -1,0 +1,13 @@
+[
+    {
+        "slug": "Google_Maps_Api",
+        "url": "https://charliewuuu.github.io/Google_Maps_Api/",
+        "figmaUrl": "",
+        "pic": "/images/work/Google_Maps_Api.png",
+        "name": "Google Map 練習",
+        "tag": ["Google Map"],
+        "article": "在瑞竣科技的教育訓練，練習串接 Google Map API。我將原本的需求整合成一個綜合功能的圖台，並美化地圖的外觀。",
+        "date": "2022/10",
+        "description": "管理與展示健行軌跡的網站。"
+    }
+]

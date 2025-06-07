@@ -4,11 +4,13 @@ import { useEffect, useRef } from 'react';
 import { useParams } from 'next/navigation';
 import data from '@/data/data.json';
 import styles from './page.module.scss';
+import { useYamlArticle, ArticleBlock } from '@/hooks/useYamlArticle';
 
 export default function Work() {
     const hasDispatchedRef = useRef(false); // 只 dispatch 一次
     const params = useParams();
     const thisData = data.find((d) => d.slug === params.name);
+    const article = useYamlArticle(params.name as string);
 
     useEffect(() => {
         if (!hasDispatchedRef.current) {
@@ -45,6 +47,23 @@ export default function Work() {
                 )}
             </div>
             <div className={styles.article} dangerouslySetInnerHTML={{ __html: thisData?.article ?? '' }} />
+            ----
+            <div className={styles.article}>
+                {article?.sections.map((block: ArticleBlock, i: number) => {
+                    if (block.type === 'text') {
+                        return <section key={i} dangerouslySetInnerHTML={{ __html: `<p>${block.content}</p>` }} />;
+                    }
+                    if (block.type === 'image') {
+                        return (
+                            <figure key={i}>
+                                <img src={block.src} alt={block.alt} width={block.width} />
+                                <figcaption>{block.caption}</figcaption>
+                            </figure>
+                        );
+                    }
+                    return null;
+                })}
+            </div>
         </div>
     );
 }
