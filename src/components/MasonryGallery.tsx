@@ -4,12 +4,13 @@ import Masonry from 'react-masonry-css';
 import styles from './MasonryGallery.module.scss';
 // import data from '@/data/data.json';
 import AnimatedLink from '@/components/AnimatedLink';
-// import Image from 'next/image';
+import Image from 'next/image';
+import FallbackImage from './FallbackImg';
 
 export default function MasonryGallery({ data }: { data: any[] }) {
     const breakpointColumnsObj = {
-        default: 2,
-        640: 1,
+        default: 3,
+        640: 2,
     };
     console.log(data[0].tag);
     return (
@@ -19,27 +20,33 @@ export default function MasonryGallery({ data }: { data: any[] }) {
                 <div key={index} className={styles.card}>
                     <AnimatedLink href={`/work/${item.slug}`} className={styles.button}>
                         <div className={styles.imageContainer}>
-                            <img
-                                src={`/images/work/${item.slug.trim()}.png`}
-                                alt={item.name}
+                            {/* <Image
+                                src={`/images/work/${item.slug}.png`}
+                                alt={item.slug}
+                                width={1000}
+                                height={1000}
                                 onError={(e) => {
-                                    console.log('第一次錯><');
-                                    const img = e.currentTarget;
-
-                                    // 第一次錯誤時改成 .jpg
-                                    if (img.src.includes(`${item.slug.trim()}.png`)) {
-                                        img.onerror = null; // 關掉當前的錯誤監聽，重新設定
-                                        img.src = `/images/work/${item.slug.trim()}.jpg`;
-
-                                        // 重新綁定 onError（第二層 fallback）
+                                    const img = e.currentTarget as HTMLImageElement;
+                                    if (img.src.includes(`${item.slug}.png`)) {
+                                        img.onerror = null;
+                                        (e.currentTarget as HTMLImageElement).src = `/images/work/${item.slug}.jpg`;
                                         img.onerror = () => {
-                                            console.log('第二次錯><');
                                             img.onerror = null;
-                                            img.src = `/images/work/fallback.png`;
+                                            (e.currentTarget as HTMLImageElement).src = `/images/work/fallback.png`;
                                         };
                                     }
                                 }}
-                            />
+                            /> */}
+                            {/* <img
+                                src={`/images/work/${item.slug}.png`}
+                                alt={item.slug}
+                                onError={(e) => {
+                                    console.log('圖片載入失敗，進入 onError');
+                                    e.currentTarget.onerror = null;
+                                    e.currentTarget.src = '/images/work/fallback.png';
+                                }}
+                            /> */}
+                            <FallbackImage slug={item.slug} />
                         </div>
                         <div className={styles.text}>
                             <div className={styles.titleContainer}>
