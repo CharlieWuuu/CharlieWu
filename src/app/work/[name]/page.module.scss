@@ -34,24 +34,130 @@
             color: #333;
         }
     }
-    .article {
-        font-size: 1.1rem;
-        line-height: 2.2rem;
-        margin-bottom: 2rem;
+    // .article {
+    //     font-size: 1.1rem;
+    //     line-height: 2.2rem;
+    //     margin-bottom: 2rem;
 
-        section {
-            margin-bottom: 2rem;
+    //     section {
+    //         margin-bottom: 2rem;
+    //     }
+    //     img {
+    //         margin: auto;
+    //     }
+    //     figcaption {
+    //         display: flex;
+    //         width: 100%;
+    //         justify-content: center;
+    //         font-size: 1rem;
+    //         color: #888;
+    //         margin-bottom: 2rem;
+    //     }
+    // }
+
+    .article {
+        line-height: 1.9;
+        font-size: 1.05rem;
+        color: #2d2d2d;
+        font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+        padding-bottom: 4rem;
+
+        p {
+            margin: 1.2em 0;
         }
+
+        h1,
+        h2,
+        h3 {
+            line-height: 1.4;
+            margin: 2.2em 0 1em;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2rem;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid #ddd;
+            padding-left: 0.6em;
+            background-color: #f9f9f9;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        ul,
+        ol {
+            padding-left: 1.5em;
+            margin: 1.2em 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            // color: #0070f3;
+            // text-decoration: underline;
+            // word-break: break-word;
+        }
+
+        blockquote {
+            border-left: 4px solid #ccc;
+            margin: 1.5em 0;
+            padding: 0.5em 1em;
+            background: #f8f8f8;
+            color: #555;
+            font-style: italic;
+        }
+
+        code {
+            background: #f1f1f1;
+            padding: 0.1em 0.4em;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.95em;
+        }
+
+        pre {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 1em;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
         img {
-            margin: auto;
+            display: block;
+            margin: 2em auto;
+            max-width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
-        figcaption {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            font-size: 1rem;
-            color: #888;
-            margin-bottom: 2rem;
+
+        figure {
+            text-align: center;
+            margin: 2em 0;
+
+            figcaption {
+                font-size: 0.9em;
+                color: #777;
+                margin-top: 0.5em;
+            }
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ddd;
+            margin: 2.5em 0;
         }
     }
 }
