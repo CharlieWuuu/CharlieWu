@@ -2,12 +2,11 @@
 
 import Masonry from 'react-masonry-css';
 import styles from './MasonryGallery.module.scss';
-// import data from '@/data/data.json';
 import AnimatedLink from '@/components/AnimatedLink';
-import Image from 'next/image';
 import FallbackImage from './FallbackImg';
+import { GalleryItem } from '@/types/GalleryItem';
 
-export default function MasonryGallery({ data }: { data: any[] }) {
+export default function MasonryGallery({ data }: { data: GalleryItem[] }) {
     const breakpointColumnsObj = {
         default: 3,
         640: 2,
@@ -20,32 +19,6 @@ export default function MasonryGallery({ data }: { data: any[] }) {
                 <div key={index} className={styles.card}>
                     <AnimatedLink href={`/work/${item.slug}`} className={styles.button}>
                         <div className={styles.imageContainer}>
-                            {/* <Image
-                                src={`/images/work/${item.slug}.png`}
-                                alt={item.slug}
-                                width={1000}
-                                height={1000}
-                                onError={(e) => {
-                                    const img = e.currentTarget as HTMLImageElement;
-                                    if (img.src.includes(`${item.slug}.png`)) {
-                                        img.onerror = null;
-                                        (e.currentTarget as HTMLImageElement).src = `/images/work/${item.slug}.jpg`;
-                                        img.onerror = () => {
-                                            img.onerror = null;
-                                            (e.currentTarget as HTMLImageElement).src = `/images/work/fallback.png`;
-                                        };
-                                    }
-                                }}
-                            /> */}
-                            {/* <img
-                                src={`/images/work/${item.slug}.png`}
-                                alt={item.slug}
-                                onError={(e) => {
-                                    console.log('圖片載入失敗，進入 onError');
-                                    e.currentTarget.onerror = null;
-                                    e.currentTarget.src = '/images/work/fallback.png';
-                                }}
-                            /> */}
                             <FallbackImage slug={item.slug} />
                         </div>
                         <div className={styles.text}>

@@ -1,5 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 type FallbackImageProps = {
     slug: string;
@@ -18,7 +19,7 @@ export default function FallbackImage({ slug }: FallbackImageProps) {
 
             const testImage = (path: string): Promise<boolean> =>
                 new Promise((resolve) => {
-                    const img = new Image();
+                    const img = new window.Image();
                     img.src = path;
                     img.onload = () => resolve(true);
                     img.onerror = () => resolve(false);
@@ -36,5 +37,5 @@ export default function FallbackImage({ slug }: FallbackImageProps) {
         tryLoad();
     }, [slug]);
 
-    return <img src={src} alt={slug} />;
+    return <Image src={src} alt={slug} width={1000} height={1000} priority />;
 }
