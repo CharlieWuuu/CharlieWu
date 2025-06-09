@@ -7,15 +7,13 @@ export type GalleryItem = {
     status: string;
     hasArticle: string;
     tag: string;
-    links: {
-        url: string;
-        url_bk: string;
-        code: string;
-        design: string;
-        flow: string;
-        blog: string;
-        video: string;
-        slide: string;
-        inspire: string;
-    };
+    url: string;
+    url_bk: string;
+    url_code: string;
+    url_design: string;
+    url_flow: string;
+    url_blog: string;
+    url_video: string;
+    url_slide: string;
+    url_inspire: string;
 };

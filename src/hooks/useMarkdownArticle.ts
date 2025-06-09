@@ -6,7 +6,7 @@ export function useMarkdownArticle(slug: string) {
 
     useEffect(() => {
         async function fetchMd() {
-            const res = await fetch(`/article/${slug}.md`);
+            const res = await fetch(`/article/${slug.trim()}.md`);
             const text = await res.text();
 
             const html = await marked.parse(text); // ✅ 重點在這一行

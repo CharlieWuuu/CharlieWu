@@ -1,0 +1,1 @@
+醫療服務查詢地圖	medical_map
