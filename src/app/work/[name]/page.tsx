@@ -1,16 +1,17 @@
 import { fetchGalleryData } from '@/lib/fetchGallery';
 import Work from './work';
-import { GalleryItem } from '@/types/GalleryItem';
 
 export async function generateStaticParams() {
-    const data: GalleryItem[] = await fetchGalleryData();
+    const data = await fetchGalleryData();
     return data.map((item) => ({ name: item.slug }));
 }
 
-export default async function Page({ params }: { params: { name: string } }) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default async function Page({ params }: any) {
     const data = await fetchGalleryData();
+    const thisData = data.find((d) => d.slug === params.name);
 
-    const thisData = data.find((d: GalleryItem) => d.slug.trim() === params.name);
+    if (!thisData) return <div>404</div>;
 
-    return <Work thisData={thisData as GalleryItem} />;
+    return <Work thisData={thisData} />;
 }

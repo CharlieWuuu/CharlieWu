@@ -1,14 +1,14 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import styles from './page.module.scss';
+import styles from './work.module.scss';
 import { useMarkdownArticle } from '@/hooks/useMarkdownArticle';
 import { GalleryItem } from '@/types/GalleryItem';
 
 export default function Work({ thisData }: { thisData: GalleryItem }) {
     const hasDispatchedRef = useRef(false);
     const contentHtml = useMarkdownArticle(thisData?.slug);
-    console.log(thisData);
+
     useEffect(() => {
         if (!hasDispatchedRef.current) {
             document.dispatchEvent(new CustomEvent('startEnterAnimation'));
