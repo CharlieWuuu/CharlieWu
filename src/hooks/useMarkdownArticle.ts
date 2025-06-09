@@ -11,7 +11,6 @@ export function useMarkdownArticle(slug: string) {
 
             const html = await marked.parse(text); // ✅ 重點在這一行
             setContentHtml(html);
-            console.log(html);
         }
 
         fetchMd();

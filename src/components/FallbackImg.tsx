@@ -9,12 +9,11 @@ type FallbackImageProps = {
 };
 
 export default function FallbackImage({ slug }: FallbackImageProps) {
-    const [src, setSrc] = useState('');
+    const [src, setSrc] = useState(`/images/work/${slug.trim()}.png`);
 
     useEffect(() => {
         const tryLoad = async () => {
             const png = `/images/work/${slug.trim()}.png`;
-            const jpg = `/images/work/${slug.trim()}.jpg`;
             const fallback = `/images/work/fallback.png`;
 
             const testImage = (path: string): Promise<boolean> =>
@@ -27,8 +26,6 @@ export default function FallbackImage({ slug }: FallbackImageProps) {
 
             if (await testImage(png)) {
                 setSrc(png);
-            } else if (await testImage(jpg)) {
-                setSrc(jpg);
             } else {
                 setSrc(fallback);
             }
@@ -37,5 +34,5 @@ export default function FallbackImage({ slug }: FallbackImageProps) {
         tryLoad();
     }, [slug]);
 
-    return <Image src={src} alt={slug} width={1000} height={1000} priority />;
+    return <Image src={src} alt={slug} width={1600} height={900} priority />;
 }

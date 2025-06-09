@@ -8,7 +8,6 @@ export type GalleryItem = {
     hasArticle: string;
     tag: string;
     links: {
-        img: string;
         url: string;
         url_bk: string;
         code: string;
@@ -16,6 +15,7 @@ export type GalleryItem = {
         flow: string;
         blog: string;
         video: string;
+        slide: string;
         inspire: string;
     };
 };
