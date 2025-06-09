@@ -8,7 +8,7 @@
 
 此為 Hahow 課程「[動畫互動網頁程式入門](https://hahow.in/courses/56189df9df7b3d0b005c6639)」的作業之一，我在本作品應用了 CSS 的幾何形狀（矩形、圓角、填色、透明度）、絕對定位／相對定位、flexbox 的排版概念。
 
-![畫面示意圖](../images/work/business_card.png)
+
 
 
 
