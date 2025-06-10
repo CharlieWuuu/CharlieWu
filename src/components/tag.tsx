@@ -5,7 +5,6 @@ type Props = {
 };
 
 export default function Tag({ tag }: Props) {
-    console.log(tag);
     return (
         <div className={styles.tagContainer}>
             {tag.split(',').map((tag: string, index: number) => (

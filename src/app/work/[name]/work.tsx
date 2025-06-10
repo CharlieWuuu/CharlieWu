@@ -34,7 +34,7 @@ export default function Work({ thisData }: { thisData: GalleryItem }) {
         <div className={styles.Work}>
             <div className={styles.titleContainer}>
                 <H1>{thisData?.name}</H1>
-                <p>{thisData?.date}</p>
+                <p>{thisData?.date.slice(0, 7)}</p>
             </div>
             <Tag tag={thisData?.tag} />
             <div>

@@ -1,11 +1,12 @@
 @import 'tailwindcss';
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root {
+    --background: rgb(250, 250, 250);
+    --text: #505050;
+    --text_darken: #393939;
 }
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -20,7 +21,21 @@
 } */
 
 body {
-    background: #ffffff;
-    color: #171717;
+    background: var(--background);
+    color: var(--text);
     font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
+    font-weight: 500;
 }
+/*
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/noise.jpg');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 9999;
+} */
