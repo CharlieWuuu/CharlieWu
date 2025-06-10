@@ -1,3 +1,4 @@
+@use '../styles/media' as media;
 .container {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,18 @@
         a {
             img {
                 width: 35%;
+            }
+        }
+    }
+
+    @include media.media(md) {
+        gap: 4rem;
+        .description {
+            .title {
+                font-size: 1.2rem;
+            }
+            .slogan {
+                font-size: 0.8rem;
             }
         }
     }

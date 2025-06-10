@@ -1,3 +1,5 @@
+@use '../../styles/media' as media;
+
 .Work {
     padding-top: 4rem;
 
@@ -6,22 +8,42 @@
         display: flex;
         align-items: start;
         justify-content: space-between;
-        gap: 2rem;
+        // gap: 2rem;
         margin-bottom: 2rem;
+
+        @include media.media(md) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 2rem;
+        }
         .Text {
-            max-width: 45%;
+            // max-width: 45%;
+            min-width: 300px;
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            h1 {
-                font-weight: 500;
-                font-size: 2rem;
-                color: #333;
+
+            @include media.media(md) {
+                gap: 1.5rem;
+                min-width: auto;
             }
+
             p {
                 line-height: 3rem;
                 font-size: 1.2rem;
                 color: #2d2d2d;
+                display: flex;
+                flex-direction: column;
+                text-align: justify;
+
+                @include media.media(lg) {
+                    display: inline;
+                }
+
+                @include media.media(sm) {
+                    line-height: 2rem;
+                    font-size: 1rem;
+                }
             }
             .Icon {
                 display: flex;
@@ -38,6 +60,7 @@
                     }
                     img {
                         width: 2rem;
+                        min-width: 2rem;
                         opacity: 0.3;
                         cursor: pointer;
                         transition: all 0.2s ease-in-out;
@@ -45,8 +68,17 @@
                 }
             }
         }
-        img {
-            width: 40%;
+        .Portrait {
+            max-width: 400px;
+            min-width: 300px;
+            overflow: hidden;
+            border-radius: 1000px;
+            height: 120px;
+            object-fit: cover;
+            @include media.media(md) {
+                max-width: 100%;
+                min-width: auto;
+            }
         }
     }
 }

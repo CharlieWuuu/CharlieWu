@@ -9,7 +9,7 @@ import { GalleryItem } from '@/types/GalleryItem';
 export default function MasonryGallery({ data }: { data: GalleryItem[] }) {
     const breakpointColumnsObj = {
         default: 3,
-        640: 2,
+        992: 2,
     };
 
     return (

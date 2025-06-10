@@ -1,0 +1,21 @@
+@use 'sass:map';
+
+// 常用斷點
+$breakpoints: (
+    xs: 320px,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+);
+
+@mixin media($breakpoint) {
+    @if map.has-key($breakpoints, $breakpoint) {
+        @media (max-width: map.get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    } @else {
+        @warn "⚠️ 沒有定義 '#{$breakpoint}' 這個斷點";
+    }
+}

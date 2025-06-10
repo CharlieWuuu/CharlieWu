@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import styles from './work.module.scss';
 import { useMarkdownArticle } from '@/hooks/useMarkdownArticle';
 import { GalleryItem } from '@/types/GalleryItem';
+import H1 from '@/components/h1';
 
 export default function Work({ thisData }: { thisData: GalleryItem }) {
     const hasDispatchedRef = useRef(false);
@@ -19,7 +20,7 @@ export default function Work({ thisData }: { thisData: GalleryItem }) {
     return (
         <div className={styles.Work}>
             <div className={styles.titleContainer}>
-                <h1>{thisData?.name}</h1>
+                <H1>{thisData?.name}</H1>
                 <p>{thisData?.date}</p>
             </div>
             <div className={styles.tagContainer}>
