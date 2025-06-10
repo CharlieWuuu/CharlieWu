@@ -1,1 +1,3 @@
-Google Maps	google_maps_api
+某次教育訓練的練習作品，主題為串接 Google Maps API。
+
+我將原本分散的需求整合為一個具備多項功能的圖台，並進行地圖樣式的美化與介面優化。

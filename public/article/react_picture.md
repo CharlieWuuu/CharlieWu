@@ -1,1 +1,3 @@
-圖片查詢網站	react_picture
+Udemy 課程「2024 網頁全端開發」的練習作品。
+
+練習建立基本的 React 網站，並串接 Pexels API 製作圖片查詢與展示功能。

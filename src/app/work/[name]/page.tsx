@@ -9,7 +9,8 @@ export async function generateStaticParams() {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default async function Page({ params }: any) {
     const data = await fetchGalleryData();
-    const thisData = data.find((d) => d.slug === params.name);
+    const resolvedParams = await params;
+    const thisData = data.find((d) => d.slug === resolvedParams.name);
 
     if (!thisData) return <div>404</div>;
 
