@@ -5,6 +5,7 @@ import styles from './MasonryGallery.module.scss';
 import AnimatedLink from '@/components/AnimatedLink';
 import FallbackImage from './FallbackImg';
 import { GalleryItem } from '@/types/GalleryItem';
+import Tag from './tag';
 
 export default function MasonryGallery({ data }: { data: GalleryItem[] }) {
     const breakpointColumnsObj = {
@@ -28,13 +29,7 @@ export default function MasonryGallery({ data }: { data: GalleryItem[] }) {
                                     <p className={styles.title}>{item.name}</p>
                                     <span className={styles.time}>{item.date.slice(0, 7)}</span>{' '}
                                 </div>
-                                <div className={styles.tagContainer}>
-                                    {item.tag.split(',').map((tag: string, index: number) => (
-                                        <p key={index} className={styles.tag}>
-                                            {tag}
-                                        </p>
-                                    ))}
-                                </div>
+                                <Tag tag={item.tag} />
                                 <p>{item.description}</p>
                             </div>
                         </AnimatedLink>

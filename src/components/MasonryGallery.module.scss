@@ -83,20 +83,6 @@
             }
         }
 
-        .tagContainer {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.4rem;
-
-            .tag {
-                background-color: #f0f0f0;
-                padding: 0.2rem 0.2rem;
-                border-radius: 4px;
-                font-size: 0.8rem;
-                line-height: 0.8rem;
-                color: #333;
-            }
-        }
         @include media.media(md) {
             .titleContainer {
                 .title {
@@ -108,13 +94,7 @@
                     line-height: 1rem;
                 }
             }
-            .tagContainer {
-                gap: 0.2rem;
-                .tag {
-                    font-size: 0.6rem;
-                    line-height: 0.6rem;
-                }
-            }
+
             p {
                 font-size: 1rem;
                 line-height: 1.4rem;

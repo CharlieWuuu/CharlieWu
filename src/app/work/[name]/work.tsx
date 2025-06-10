@@ -5,6 +5,7 @@ import styles from './work.module.scss';
 import { useMarkdownArticle } from '@/hooks/useMarkdownArticle';
 import { GalleryItem } from '@/types/GalleryItem';
 import H1 from '@/components/h1';
+import Tag from '@/components/tag';
 
 export default function Work({ thisData }: { thisData: GalleryItem }) {
     const hasDispatchedRef = useRef(false);
@@ -23,13 +24,7 @@ export default function Work({ thisData }: { thisData: GalleryItem }) {
                 <H1>{thisData?.name}</H1>
                 <p>{thisData?.date}</p>
             </div>
-            <div className={styles.tagContainer}>
-                {thisData?.tag.split(',').map((tag, index) => (
-                    <p key={index} className={styles.tag}>
-                        {tag}
-                    </p>
-                ))}
-            </div>
+            <Tag tag={thisData?.tag} />
             <div>
                 作品連結：
                 <a href={thisData?.url} target="_blank" rel="noopener noreferrer">
