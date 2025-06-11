@@ -31,8 +31,11 @@
                 transform: translateX(-2px);
                 padding: 0rem 0;
                 width: 100%;
-                max-width: 300px;
+                max-width: 280px;
                 opacity: 0.85;
+                @include media.media(md) {
+                    max-width: 160px;
+                }
             }
             &::after {
                 content: none !important;
