@@ -63,10 +63,14 @@
             font-size: 1.25rem;
         }
 
-        ul,
+        ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+        }
+
         ol {
-            padding-left: 1.5em;
-            margin: 1.2em 0;
+            list-style: decimal;
+            margin-left: 1.5rem;
         }
 
         li {

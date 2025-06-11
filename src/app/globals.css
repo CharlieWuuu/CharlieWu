@@ -24,7 +24,7 @@ body {
     background: var(--background);
     color: var(--text);
     font-family: 'Cormorant Garamond', 'Noto Serif TC', serif;
-    font-weight: 500;
+    font-weight: 300;
 }
 /*
 body::before {

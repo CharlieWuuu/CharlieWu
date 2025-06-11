@@ -15,5 +15,4 @@ export type GalleryItem = {
     url_blog: string;
     url_video: string;
     url_slide: string;
-    url_inspire: string;
 };

@@ -27,7 +27,6 @@ export default function Work({ thisData }: { thisData: GalleryItem }) {
         { label: 'HackMD', url: thisData?.url_blog },
         { label: '影片', url: thisData?.url_video },
         { label: '投影片', url: thisData?.url_slide },
-        { label: 'Figma', url: thisData?.url_inspire },
     ].filter((link) => !!link.url); // 去掉空的
 
     return (
@@ -37,17 +36,19 @@ export default function Work({ thisData }: { thisData: GalleryItem }) {
                 <p>{thisData?.date.slice(0, 7)}</p>
             </div>
             <Tag tag={thisData?.tag} />
-            <div>
-                作品連結：
-                {links.map((link, index) => (
-                    <>
-                        {index > 0 && '、'}
-                        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-                            {link.label}
-                        </a>
-                    </>
-                ))}
-            </div>
+            {links.length > 0 && (
+                <div>
+                    作品連結：
+                    {links.map((link, index) => (
+                        <span key={index}>
+                            {index > 0 && '、'}
+                            <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                {link.label}
+                            </a>
+                        </span>
+                    ))}
+                </div>
+            )}
             <img src={`/images/work/${thisData?.slug.trim()}.png`} alt={thisData?.slug} />
             <div className={styles.article} dangerouslySetInnerHTML={{ __html: contentHtml }} />
         </div>
