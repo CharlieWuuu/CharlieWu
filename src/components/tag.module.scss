@@ -5,19 +5,27 @@
     gap: 0.4rem;
 
     .tag {
-        background-color: #f0f0f0;
-        padding: 0.2rem 0.2rem;
+        // background-color: #f0f0f0;
+        // padding: 0.2rem 0.2rem;
+        // border-radius: 4px;
+        // font-size: 0.9rem;
+        // line-height: 0.9rem;
+        // color: #333;
+
+        background: #ebebeb;
+        color: #6d6d6d;
+        padding: 0.2rem 0.3rem;
         border-radius: 4px;
-        font-size: 0.9rem;
-        line-height: 0.9rem;
-        color: #333;
+        font-family: monospace;
+        font-size: 0.7em;
+        line-height: 0.7rem;
     }
 
     @include media.media(md) {
         gap: 0.2rem;
         .tag {
-            font-size: 0.8rem;
-            line-height: 0.8rem;
+            font-size: 0.6rem;
+            line-height: 0.6rem;
         }
     }
 }
