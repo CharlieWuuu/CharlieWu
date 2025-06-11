@@ -6,10 +6,10 @@ import TransitionLayout from '@/components/TransitionLayout';
 
 export const metadata: Metadata = {
     title: 'Charlie Wu 作品集網站',
-    description: 'Charlie Wu 作品集網站｜網頁工程師｜讓資訊更簡潔易解',
+    description: '網頁工程師｜讓資訊更簡潔易解',
     openGraph: {
         title: 'Charlie Wu 作品集網站',
-        description: 'Charlie Wu 作品集網站',
+        description: '網頁工程師｜讓資訊更簡潔易解',
         images: [
             {
                 url: 'https://charlie-wu.vercel.app/images/OG_Image.png', // ✅ 用絕對 URL
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     twitter: {
         card: 'summary_large_image',
         title: 'Charlie Wu 作品集網站',
-        description: 'Charlie Wu 作品集網站',
+        description: '網頁工程師｜讓資訊更簡潔易解',
         images: ['https://charlie-wu.vercel.app/images/OG_Image.png'],
     },
 };
