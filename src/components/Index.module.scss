@@ -23,7 +23,7 @@
     }
 
     @include media.media(md) {
-        gap: 4rem;
+        gap: 6rem;
         .description {
             .title {
                 font-size: 1.1rem;
