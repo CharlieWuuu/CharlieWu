@@ -1,3 +1,3 @@
-CSS 的練習作品，以新擬態風格（neumorphism）設計個人履歷網頁。
+CSS 的練習作品，以新擬態風格（neumorphism）設計個人履歷網頁，此為 Hahow 課程「[動畫互動網頁程式入門](https://hahow.in/courses/56189df9df7b3d0b005c6639)」的作業之一。
 
-設計主要發想 [自此](https://codepen.io/myacode/pen/PoqQQNM)。
+新擬態風格利用陰影與亮光來呈現元件的形狀與立體度，給人柔和的視覺感受。然而為了使用陰影與亮光，元件本身的顏色使用較中間的值，容易導致對比度不夠的問題。

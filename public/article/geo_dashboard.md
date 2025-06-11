@@ -1,1 +1,1 @@
-地理資料整合平台	geo_dashboard
+地理資料整合平臺	geo_dashboard

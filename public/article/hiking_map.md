@@ -1,5 +1,8 @@
+> 此網頁後端為冷啟動機制，第一次執行可能需[等待約 1 分鐘](https://render.com/docs/free?_gl=1*xy5vyn*_gcl_au*Mzg3MTk1MzMwLjE3NDczMDM4MzU.*_ga*NjMzNDY3OTcyLjE3NDU1MTc5NTk.*_ga_QK9L9QJC5N*czE3NDk2MTExMTMkbzEyJGcwJHQxNzQ5NjExMTEzJGo2MCRsMCRoMA..#:~:text=Spinning%20up%20a%20service%20takes%20up%20to%20a%20minute)才會取得資料，敬請見諒。
+
+
 本人平時有登山習慣，過去常以 QGIS 搭配 Excel 紀錄軌跡資料，但在瀏覽與展示上略顯不便，於是決定開發網站進行整合呈現。
-同時也將網站設計成模擬登山愛好者的交流平台，目前功能包含：
+同時也將網站設計成模擬登山愛好者的交流平臺，目前功能包含：
 
 1. 首頁
 2. 使用者頁面

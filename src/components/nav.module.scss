@@ -22,6 +22,7 @@
         height: 4rem;
         gap: 1rem;
         @include media.media(md) {
+            margin: 1.6rem auto 0.4rem auto;
             height: 2rem;
         }
         a {

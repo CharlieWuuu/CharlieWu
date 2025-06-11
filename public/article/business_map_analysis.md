@@ -1,1 +1,1 @@
-商業選址分析平台	business_map_analysis
+商業選址分析平臺	business_map_analysis
