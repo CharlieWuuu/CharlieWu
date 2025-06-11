@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         description: '網頁工程師｜讓資訊更簡潔易解',
         images: [
             {
-                url: 'https://charlie-wu.vercel.app/images/OG_Image.png', // ✅ 用絕對 URL
+                url: 'https://charlie-wu.vercel.app/images/ogImage.png',
                 width: 1200,
                 height: 630,
                 alt: 'Charlie Wu 作品集網站',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
         card: 'summary_large_image',
         title: 'Charlie Wu 作品集網站',
         description: '網頁工程師｜讓資訊更簡潔易解',
-        images: ['https://charlie-wu.vercel.app/images/OG_Image.png'],
+        images: ['https://charlie-wu.vercel.app/images/ogImage.png'],
     },
 };
 
