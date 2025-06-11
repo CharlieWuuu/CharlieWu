@@ -19,6 +19,7 @@
         font-family: monospace;
         font-size: 0.7em;
         line-height: 0.7rem;
+        letter-spacing: 0;
     }
 
     @include media.media(md) {
