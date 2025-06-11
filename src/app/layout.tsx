@@ -5,8 +5,26 @@ import Nav from '../components/nav';
 import TransitionLayout from '@/components/TransitionLayout';
 
 export const metadata: Metadata = {
-    title: 'Charlie Wu',
-    description: 'Personal website of Charlie Wu',
+    title: 'Charlie Wu 作品集網站',
+    description: 'Charlie Wu 作品集網站｜網頁工程師｜讓資訊更簡潔易解',
+    openGraph: {
+        title: 'Charlie Wu 作品集網站',
+        description: 'Charlie Wu 作品集網站',
+        images: [
+            {
+                url: 'https://charlie-wu.vercel.app/images/OG_Image.png', // ✅ 用絕對 URL
+                width: 1200,
+                height: 630,
+                alt: 'Charlie Wu 作品集網站',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Charlie Wu 作品集網站',
+        description: 'Charlie Wu 作品集網站',
+        images: ['https://charlie-wu.vercel.app/images/OG_Image.png'],
+    },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
