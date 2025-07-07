@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://charlie-wu.vercel.app
+
+# Sitemaps
+Sitemap: https://charlie-wu.vercel.app/sitemap.xml

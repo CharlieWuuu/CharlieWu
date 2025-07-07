@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://charlie-wu.vercel.app</loc><lastmod>2025-07-07T11:06:44.178Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/about</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/3dmap</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/bootstrap_blog</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/brand_color</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/business_card</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/business_map_analysis</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/charliewu</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/cinema</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/figma_travel</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/geo_dashboard</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/google_maps_api</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/hiking_map</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/line_bot</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/map_collection</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/marker_spiderfier</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/medical_map</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/piano_tatsujin</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/policy_platform</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/profile</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/pwa</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/react_picture</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/studio_website</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/taiwan_indigenous</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://charlie-wu.vercel.app/work/weather_calender</loc><lastmod>2025-07-07T11:06:44.180Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+</urlset>
